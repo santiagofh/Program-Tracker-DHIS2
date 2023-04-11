@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>reveal.js</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+		<style>
+			.tamanio-chico {
+			  font-size: 0.75em;
+			}
+		  </style>
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img src="/img/dhis2-simple.png" alt="" width="200" style="margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+
+					<h3>Programa de seguimiento en Dhis2</h3>
+					<p>
+						<small>Equipo de <a href="https://github.com/minsal-pntm">Data Science y Gestión de Información</a>
+					
+							<br>Departamento de <a href="http://epi.minsal.cl/">Epidemiología</a><br><a href="https://www.minsal.cl/"> Ministerio de Salud</a>
+					
+						</small>
+					</p>
+					
+					<p>
+						<small> Presentado por: <a href="https://github.com/santiagofh">Santiago Farías</a> </small>
+					</p>
+					<aside class="notes">
+						Shhh, these are your private notes 📝
+					  </aside>
+				</section>
+				<section>
+					<h3><img src="/img/dhis2-simple.png" style="margin: 0" width="40" class="demo-logo"> Hoja de ruta </h3>
+					
+					<p>
+					<medium>
+						<ul>
+							<li>Objetivos de la presentación</li>
+							<li>¿Qué es <b><span style="color:dodgerblue">Dhis2</span></b>?</li>
+							<li>Program Tracker en <b><span style="color:dodgerblue">Dhis2</span></b></li>
+							<li>Gestión de usuarios en <b><span style="color:dodgerblue">Dhis2</span></b></li>
+							<li>Diseño de la plataforma <b><span style="color:dodgerblue">Dhis2</span></b></li>
+							<li>Ejemplos de uso: Programa <b><span style="color:dodgerblue">Paxlovid</span></b></li>
+							<li>Mesa de ayuda</li>
+						</ul>						
+					</medium>
+					</p>
+					<aside class="notes">
+						Shhh, these are your private notes 📝
+					  </aside>
+				</section>
+				<section>
+					<section>
+						<h2>Objetivo Principal <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h2>
+						Mostrar el alcance de esta herramienta en la gestión de programas de salud y su potencial para abordar <b>brotes</b> de enfermedades transmisibles
+						<aside class="notes">
+							Shhh, these are your private notes 📝
+						  </aside>
+					</section>
+					<section>
+						<h2>Objetivos secundarios <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h2>
+						<ul>
+							<li>Explicar como funciona un program Tracker</li>
+							<li>Explicar como funciona un la gestión de usuarios</li>
+							<li>Explicar el diseño de la plataforma</li>
+							<li>Dar Ejemplos de uso: Programa <b><span style="color:dodgerblue">Paxlovid</span></b></li></li>
+						</ul>
+						<aside class="notes">
+							Shhh, these are your private notes 📝
+						  </aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>¿Qué es Dhis2? <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h2>
+						<p>
+							<b><span style="color:dodgerblue">Dhis2</span></b> es una <b>Plataforma</b>, no un <b>Sistema</b> <br>
+							<ul class="tamanio-chico">
+								<li>Es una plataforma de código abierto y flexible que permite la captura, el manejo y análisis de información de salud.</li>
+								<li>Desarrollada por la <span style="color:red">Universidad de Oslo</span>, esta herramienta es ampliamente utilizada en más de 69 países y cuenta con el respaldo de la Organización Mundial de la Salud (OMS).</li>
+								
+							</ul>
+							<img src="img/University_of_Oslo_seal.svg" width="150">
+							<aside class="notes">
+								Shhh, these are your private notes 📝
+							  </aside>
+						</p>
+					</section>
+					<section>
+						<h2>Alcance de la plataforma</h3>
+						<img src="/img/dhis2-simple.png" style="margin: 0" width="100" class="demo-logo">
+						<aside class="notes">
+							Shhh, these are your private notes 📝
+						  </aside>
+					</section>
+					<section>
+						<h4>Dhis2 en el mundo</h4>
+						<img src="img/dhis2-mundo.PNG">
+						<aside class="notes">
+							Shhh, these are your private notes 📝
+						  </aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Programa de seguimiento </h3>
+						<p><b>¿Que es un Programa de seguimiento?</b> <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></p>
+						<ul>
+							<li>Es un tipo de programa diseñado para capturar, monitorear y analizar información relacionada con eventos y casos individuales a lo largo del tiempo
+							</li>
+							<li>Permiten a los usuarios registrar y analizar datos a nivel de individuo</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Flujo de trabajo <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
+						<ul class="tamanio-chico">
+							<li><b>Ingresar los detalles del programa</b></li>
+							<p>Proporcionar la información básica sobre el programa, como el nombre, la descripción, el tipo de programa.</p>
+							<li><b>Asignar las variables</b></li>
+							<p>Seleccionar las variables que se capturarán durante cada evento. Estos son los datos que se recopilarán, como la fecha del evento, los resultados de las pruebas o las intervenciones realizadas.</p>
+						</ul>
+					</section>
+					<section>
+						<h3>Flujo de trabajo <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
+						<ul class="tamanio-chico">
+							<li><b>Crear los formularios de entrada de datos</b></li>
+							<p>Se puede configurar y deseñar los formularios que se utilizarán para ingresar los datos en el programa.</p>
+							<li><b>Asignar el programa a las unidades organizativas</b></li>
+							<p>Las unidades pueden incluir hospitales, clínicas, comunas, APS u otras dentro del sistema de salud.</p>
+							<li><b>Crear notificaciones del programa</b></li>
+							<p>Configure las notificaciones automáticas que se enviarán a los usuarios o grupos de usuarios en función de eventos.</p>
+						</ul>
+					</section>
+					<section>
+						<h3>Etapas del Programa <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
+						<p class="tamanio-chico">
+							Cada programa en DHIS2 se compone de varias etapas, que representan los pasos o actividades involucradas en el proceso de salud
+						</p>
+						<ul>
+							<li><span style="color:dodgerblue"">Registro del paciente</span></li>
+							<li><span style="color:dodgerblue"">Etapa 1</span></li>
+							<li><span style="color:dodgerblue"">Etapa 2</span></li>
+							<li><span style="color:dodgerblue"">Etapa 3</span></li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Usuarios en Dhis2 <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
+						<P>
+							Una de las características clave de DHIS2 es la capacidad de gestionar diferentes <b>tipos de usuarios con diferentes niveles de acceso y permisos</b>
+							<br>
+							<span style="font-size: 5em;">👥</span>
+						</P>
+					</section>
+					<section>
+						<h3>Profesional de salud <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
+						<P>
+							<ul>
+								<li>Asociados a uno o más establecimientos de Salud</li>
+								<li>Registrar información en los programas asignados</li>
+								<li>Modificar la información de un paciente en un programa</li>
+							</ul>
+							<span style="font-size: 5em;">👩‍⚕️</span>
+						</P>
+					</section>
+					<section>
+						<h3>Usuario Validador de información <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
+						<P>
+							<ol>
+								<li>Asociados a uno o más establecimientos de Salud</li>
+								<li>Asociados a uno o más programas de salud</li>
+								<li>Validar la información ingresada en los formularios de registro de un programa de salud</li>
+							</ol>
+							<span style="font-size: 5em;">✅</span>
+						</P>
+					</section>
+					<section>
+						<h3>Establecimientos, Comunas, Servicios de Salud Y SEREMI <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
+						<P>
+							Visualizar la información de los programas de salud asociados a su dependencia
+							<br>
+							<span style="font-size: 5em;">🏥</span>
+						</P>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Diseño de Dhis2</h3>
+						<p>
+							La interfaz es intuitiva, fácil de navegar y diseñada para adaptarse a las necesidades de los usuarios
+						</p>
+					</section>
+					<section>
+						<h3>Dashboard</h3>
+						<style>
+							.container{
+								display: flex;
+							}
+							.col{
+								flex: 1;
+							}
+							</style>
+							<div class="container">
+								
+								<div class="col">
+										Es la página principal donde los usuarios pueden ver y acceder a las visualizaciones de datos. <br>
+										Los paneles de control pueden ser personalizados para mostrar gráficos, tablas, mapas y otros elementos visuales.
+								</div>
+								<div class="col">
+									<img src="/img/dhis2-inicio.png" width="250" class="inicio-dhis">
+								</div>
+							</div>
+					</section>
+				</section>
+				</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
