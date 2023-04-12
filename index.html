@@ -169,7 +169,7 @@
 								<li>Registrar información en los programas asignados</li>
 								<li>Modificar la información de un paciente en un programa</li>
 							</ul>
-							<span style="font-size: 5em;">👩‍⚕️</span>
+							<span style="font-size: 4em;">👩‍⚕️</span>
 						</P>
 					</section>
 					<section>
@@ -180,7 +180,7 @@
 								<li>Asociados a uno o más programas de salud</li>
 								<li>Validar la información ingresada en los formularios de registro de un programa de salud</li>
 							</ol>
-							<span style="font-size: 5em;">✅</span>
+							<span style="font-size: 4em;">✅</span>
 						</P>
 					</section>
 					<section>
@@ -188,7 +188,7 @@
 						<P>
 							Visualizar la información de los programas de salud asociados a su dependencia
 							<br>
-							<span style="font-size: 5em;">🏥</span>
+							<span style="font-size: 4em;">🏥</span>
 						</P>
 					</section>
 				</section>
@@ -205,18 +205,26 @@
 							.container{
 								display: flex;
 							}
-							.col{
+							.col {
+								display: flex;
+								justify-content: center; /* Centra el contenido horizontalmente */
+								align-items: center;     /* Centra el contenido verticalmente */
 								flex: 1;
+								font-size: 0.75em;
+								padding: 10px;           /* Ajusta el valor de padding según lo necesites */
 							}
+
+
 							</style>
 							<div class="container">
 								
-								<div class="col">
+								<div class="col left">
 										Es la página principal donde los usuarios pueden ver y acceder a las visualizaciones de datos. <br>
+										
 										Los paneles de control pueden ser personalizados para mostrar gráficos, tablas, mapas y otros elementos visuales.
 								</div>
 								<div class="col">
-									<img src="/img/dhis2-inicio.png" width="400" class="inicio-dhis">
+									<img src="/img/dhis2-inicio.png" width="500" class="inicio-dhis">
 								</div>
 							</div>
 					</section>
