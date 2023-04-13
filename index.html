@@ -11,6 +11,35 @@
 			.tamanio-chico {
 			  font-size: 0.75em;
 			}
+			.container{
+				display: flex;
+			}
+			.col {
+				display: flex;
+				justify-content: center; /* Centra el contenido horizontalmente */
+				align-items: center;     /* Centra el contenido verticalmente */
+				flex: 1;
+				font-size: 0.75em;
+				padding: 10px;           /* Ajusta el valor de padding según lo necesites */
+			}
+			.container2 {
+				position: relative;
+			}
+
+			.cuadrado {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border: 2px solid red;
+			background-color: rgba(255, 0, 0, 0.2);
+			}
+
+			.texto {
+			display: none;
+			position: absolute;
+			color: #fff;
+			font-size: 24px;
+			}
 		  </style>
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -155,10 +184,10 @@
 				<section>
 					<section>
 						<h3>Usuarios en Dhis2 <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
-						<P>
+						<Pclass="tamanio-chico">
 							Una de las características clave de DHIS2 es la capacidad de gestionar diferentes <b>tipos de usuarios con diferentes niveles de acceso y permisos</b>
 							<br>
-							<span style="font-size: 5em;">👥</span>
+							<span style="font-size: 3em;">👥</span>
 						</P>
 					</section>
 					<section>
@@ -169,7 +198,7 @@
 								<li>Registrar información en los programas asignados</li>
 								<li>Modificar la información de un paciente en un programa</li>
 							</ul>
-							<span style="font-size: 4em;">👩‍⚕️</span>
+							<span style="font-size: 3em;">👩‍⚕️</span>
 						</P>
 					</section>
 					<section>
@@ -180,7 +209,7 @@
 								<li>Asociados a uno o más programas de salud</li>
 								<li>Validar la información ingresada en los formularios de registro de un programa de salud</li>
 							</ol>
-							<span style="font-size: 4em;">✅</span>
+							<span style="font-size: 3em;">✅</span>
 						</P>
 					</section>
 					<section>
@@ -188,45 +217,72 @@
 						<P>
 							Visualizar la información de los programas de salud asociados a su dependencia
 							<br>
-							<span style="font-size: 4em;">🏥</span>
+							<span style="font-size: 3em;">🏥</span>
 						</P>
 					</section>
 				</section>
 				<section>
 					<section>
 						<h3>Diseño de Dhis2 <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
-						<p>
-							La interfaz es intuitiva, fácil de navegar y diseñada para adaptarse a las necesidades de los usuarios
-						</p>
+
+						<div class="container">
+								
+							<div class="col left">
+								<p>
+									La interfaz es intuitiva, fácil de navegar y diseñada para adaptarse a las necesidades de los usuarios
+								</p>
+							</div>
+							<div class="col">
+								<img src="/img/dhis2-inicio.png" width="500" class="inicio-dhis">
+							</div>
+						</div>
 					</section>
 					<section>
 						<h3>Dashboard <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
-						<style>
-							.container{
-								display: flex;
-							}
-							.col {
-								display: flex;
-								justify-content: center; /* Centra el contenido horizontalmente */
-								align-items: center;     /* Centra el contenido verticalmente */
-								flex: 1;
-								font-size: 0.75em;
-								padding: 10px;           /* Ajusta el valor de padding según lo necesites */
-							}
 
-
-							</style>
 							<div class="container">
 								
 								<div class="col left">
 										Es la página principal donde los usuarios pueden ver y acceder a las visualizaciones de datos. <br>
-										
+
 										Los paneles de control pueden ser personalizados para mostrar gráficos, tablas, mapas y otros elementos visuales.
 								</div>
 								<div class="col">
-									<img src="/img/dhis2-inicio.png" width="500" class="inicio-dhis">
+									<img src="/img/dhis2-dashboard.png" width="500" class="inicio-dhis">
 								</div>
 							</div>
+					</section>
+					<section>
+						<h3>Tracker Capture <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
+						<p class="tamanio-chico">
+							Para capturar y gestionar datos a nivel de individuo en programas de seguimiento (Tracker Programs).
+						</p>
+						<img src="img/dhis2-tracker_capture.png" width="800">
+
+					</section>
+					<section>
+						<h3>Program Stage <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h3>
+						<p class="tamanio-chico">
+							Interfaz para capturar la información de las etapas del programa.
+						</p>
+						<img src="img/dhis2-program-stages.png" width="800">
+
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Ejemplos de Uso <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h2>
+						<h3>Brote Escuela Militar</h3>
+						<p class="tamanio-chico">
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Ejemplos de Uso <img src="/img/dhis2-simple.png" style="margin: 0" width="50" class="demo-logo"></h2>
+						<h3>Paxlovid</h3>
+						<p class="tamanio-chico">
+						</p>
 					</section>
 				</section>
 				</div>
